@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Smart Learning</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<body>
+	<div id="header">
+		<button style="float: right;" type="button"><a href="studentLogin.html">Login</a></button>
+		<button style="float: right;" type="button"><a href="studentLogin.html">Signup</a></button>
+
+			<div id="logo">
+				<img src="logo.png" alt="logo">
+				<marquee style="color: #87bdd8;"behavior="scroll" direction="left">Smart Learning....</marquee>
+			</div>
+	</div>
+		<div id="navbar">
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutUs.html">About us</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="teacherInfo.html">Teacher info</a></li>
+				<li><a href="studentLogin.html">student login</a></li>
+			</ul>
+		</div>
+		<div id = "container">
+			<div id="inner-container">
+				<img class="mySlides" src="pic.jpg" alt="math" height ="350" width="1200">
+				<img class="mySlides"src="edu1.jpg" alt="math" height ="350" width="1200">
+				<img class="mySlides"src="edu.jpg" alt="math" height ="350" width="1200">
+				<br>
+					<div id = "inside-container">
+						<p>Smart Learning is the use of technology to enable people to learn anytime and anywhere.</p>
+						<p>We can always hear lectures more effectively, more easily, anytime, anywhere, and with better quality.</p>
+						<p>Our Seniour teacher information is given below</p>
+					</div>
+					<br>
+				<img style="margin: 35px; "src="ms.jpg">
+				<img style="margin: 35px; "src="sir.jpg">
+				<img style="margin: 35px; "src="sir1.jpg">
+				<img style="margin: 35px; "src="sir1.jpg">	
+			</div>
+		</div>
+		<div id="footer">
+			<ul id="list">
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="aboutUs.html">About SmartLearning</a></li>
+				<li><a href="aboutUs.html">Vision and Mission</a></li>
+				<li><a href="aboutUs.html">Objectives</a></li>
+				<li><a href="aboutUs.html">Equal Opportunity Policy</a></li>
+			</ul>
+		</div>
+		<div id="lfooter">
+		</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>	
+</html>

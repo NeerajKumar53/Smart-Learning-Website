@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Smart Learning</title>
+		<link rel="stylesheet" type="text/css" href="tutorials.css"/>
+	</head>
+<body>
+	<div id="header">
+		<button style="float: right;" type="button">Login</button>
+		<button style="float: right;" type="button">Signup</button>
+			<div id="logo">
+				<img src="logo.png" alt="logo">
+				<marquee style="color: #87bdd8;"behavior="scroll" direction="left">Smart Learning....</marquee>
+			</div>
+	</div>
+		<div id="navbar">
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutUs.html">About us</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="teacherInfo.html">Teacher info</a></li>
+				<li><a href="studentLogin.html">student login</a></li>
+			</ul>
+		</div>
+		<div id = "panel">	
+		<button style="float: right;" type="button"><a href="tutorials.html">Math</a></button>
+		<button style="float: right;" type="button"><a href="physics.html">Physics</a></button>
+		<button style="float: right;" type="button"><a href="Chemistry.html">Chemistry</a></button>
+		</div> 
+		<div id = "panel1">	
+			<center><h1 class="header" id="myHeader">Math</h1></center>
+		</div> 
+		<div id = "container">
+			<div id="inner-container1">
+			<h1><a href="functionLimits.html">Function and Limits</a></h1>
+			<ul>
+				<li>Definition & Notation of Some Important Sets</li>
+				<li>Defining Closed, Open, Half Open and Half Closed Interval</li>
+				<li>Introduction to Binary Relation</li>
+				<li>Introduction to Function</li>
+				<li>Inverse of a Function</li>
+				<li>Bounded Set and Monotonic Sequence</li>
+			</ul>
+			</div>
+			<div id="inner-container1">
+			<h1><a href="Differentiability.html">Differentiability</a></h1>
+			<ul>
+				<li>Derivative of a Function</li>
+				<li>Notation for Derivative</li>
+				<li>Derivative by First Principle</li>
+				<li>Derivative of Product</li>
+				<li>Problem1a-Derivative of Quotient</li>
+				<li>Differentiation by Chain Rule</li>
+			</ul>	
+			</div>
+			<div id="inner-container1">
+			<h1><a href="antiderivative.html">Antiderivatives</a></h1>
+			<ul>
+				<li>Antidifferentiation and Indefinite Integral</li>
+				<li>Difference between Delta y and dy</li>
+				<li>To Integrate Tangent Functions</li>
+				<li>Integration by Parts</li>
+				<li>Further to Integrating Partial Fractions with Non-Repeated Quadratic</li>
+				<li>The Definite Integral</li>
+			</ul>		
+		</div>
+		</div>
+			<div id="footer">
+			<ul id="list">
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="aboutUs.html">About SmartLearning</a></li>
+				<li><a href="tutorails.html">Vision and Mission</a></li>
+				<li><a href="teacherInfo.html">Objectives</a></li>
+				<li><a href="studentLogin.html">Equal Opportunity Policy</a></li>
+			</ul>
+		</div>
+		<div id="lfooter">
+		</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("panel");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>	
+</html>

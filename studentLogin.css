@@ -1,0 +1,37 @@
+*
+{
+	text-align: center;
+	font-family: Arial;
+}
+#box
+{
+	border: 5px solid grey;
+	position: fixed;
+	top: 10%;
+	left: 50%
+	margin-top: 200px;
+	margin-left: 200px;
+	height: 300px;
+	width: 900px;
+	background-color:#034f84;
+	color: white;
+	
+}	
+input
+{
+	margin: 20px;
+	height: 30px;
+	width: 200px;
+	background-color: aliceblue;
+}
+#container
+{
+	height: 900px;
+
+}
+#inner-container
+{
+	float: left;
+	height: 350px;
+	padding: 20px;
+}

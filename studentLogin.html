@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Login</title>
+		<link rel="stylesheet" href="studentLogin.css">
+	</head>
+<body>
+	<div id="box">
+	<form>
+		<fieldset style="float: right;">
+			<legend>Student Login</legend>
+				<input  type="text" name="username" placeholder="username">
+				<br>
+				<input  type="password" name="password" placeholder="password">
+				<br>
+				<input 	type="submit" value="submit">
+				<br>
+		</fieldset>
+		<fieldset style="float: left;">
+			<legend>Student SignUp</legend>
+				<input type="text" name="First Name" placeholder="First Name">
+				<input type="text" name="Last Name" placeholder="Last Name">
+				<br>
+				<input type="emali" name="Email" placeholder="Email">
+				<input type="text" name="username" placeholder="username">
+				<br>
+				<input type="password" name="password" placeholder="password">
+				<input type="submit" value="submit">
+				<br>
+		</fieldset>
+	</form>
+	</div>
+	<div id = "container">
+			<div style="margin-top: 500px;"id="inner-container">
+				<img class="mySlides" src="pic.jpg" alt="math" height ="350" width="1200">
+				<img class="mySlides"src="edu1.jpg" alt="math" height ="350" width="1200">
+				<img class="mySlides"src="edu.jpg" alt="math" height ="350" width="1200">
+			</div>	
+		</div>
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

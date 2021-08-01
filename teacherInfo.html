@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Smart Learning</title>
+		<link rel="stylesheet" type="text/css" href="teacherInfo.css"/>
+	</head>
+<body>
+	<div id="header">
+		<button style="float: right;" type="button"><a href="studentLogin.html">Login</a></button>
+		<button style="float: right;" type="button"><a href="studentLogin.html">Signup</a></button>
+
+			<div id="logo">
+				<img src="logo.png" alt="logo">
+				<marquee style="color: #87bdd8;"behavior="scroll" direction="left">Smart Learning....</marquee>
+			</div>
+	</div>
+		<div id="navbar">
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutUs.html">About us</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="teacherInfo.html">Teacher info</a></li>
+				<li><a href="studentLogin.html">student login</a></li>
+			</ul>
+		</div>
+		<div id = "panel">	
+		<center><h1 style="font-family: Verdana;">Teacher Information</h1><center>
+		</div> 
+		<div id = "container">
+			<br>
+			<div id="inner-container1">
+				<center><img src="ms.jpg"></center>
+				<p>Ms. Amber Javed</p>
+				<p>PHD Chemistry</p>
+				<p>Curse given</p>
+				<p>Chemistry</p>
+				<p>contact at: amber@gmail.com</p>		
+			</div>
+			<div id="inner-container1">
+				<center><img src="sir.jpg"></center>
+				<p>Sir. Abrar Ahsan</p>
+				<p>PHD Physics</p>
+				<p>Curse given</p>
+				<p>Physics</p>
+				<p>contact at: abrar@gmail.com</p>		
+			</div>
+			<div id="inner-container1">
+				<center><img src="sir.jpg"></center>
+				<p>Sir. Hassan Shahid</p>
+				<p>PHD Math</p>
+				<p>Curse given</p>
+				<p>Mathametics</p>
+				<p>contact at: hassan@gmail.com</p>		
+			</div>
+			<div id="inner-container1">
+				<center><img src="sir1.jpg"></center>
+				<p>Ms. Karar Haider</p>
+				<p>PHD Math</p>
+				<p>Curse given</p>
+				<p>Mathametics</p>
+				<p>contact at: karar@gmail.com</p>		
+			</div>	
+		</div>	
+			<div id="footer">
+			<ul id="list">
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="aboutUs.html">About SmartLearning</a></li>
+				<li><a href="tutorails.html">Vision and Mission</a></li>
+				<li><a href="teacherInfo.html">Objectives</a></li>
+				<li><a href="studentLogin.html">Equal Opportunity Policy</a></li>
+			</ul>
+		</div>
+		<div id="lfooter">
+		</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("panel");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+</body>	
+</html>

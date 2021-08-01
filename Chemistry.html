@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Smart Learning</title>
+		<link rel="stylesheet" type="text/css" href="Chemistry.css"/>
+	</head>
+<body>
+	<div id="header">
+		<button style="float: right;" type="button"><a href="studentLogin.html">Login</a></button>
+		<button style="float: right;" type="button"><a href="studentLogin.html">Signup</a></button>
+
+			<div id="logo">
+				<img src="logo.png" alt="logo">
+				<marquee style="color: #87bdd8;"behavior="scroll" direction="left">Smart Learning....</marquee>
+			</div>
+	</div>
+		<div id="navbar">
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutUs.html">About us</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="teacherInfo.html">Teacher info</a></li>
+				<li><a href="studentLogin.html">student login</a></li>
+			</ul>
+		</div>
+		<div  id = "panel">	
+		<button style="float: right;" type="button"><a href="tutorials.html">Math</a></button>
+		<button style="float: right;" type="button"><a href="physics.html">Physics</a></button>
+		<button style="float: right;" type="button"><a href="Chemistry.html">Chemistry</a></button>
+		</div> 
+		<div id = "panel1">	
+			<h1 class="header" id="myHeader">Chemistry</h1>
+		</div> 
+		<div id = "container">
+			<div id="inner-container1">
+			<h1><a href="transitionElements.html">Periodic Classification of Elements and Periodicity</a></h1>
+			<ul>
+				<li>Atomic Size and Atomic Radius</li>
+				<li>Trend of Atomic Size and Atomic Radius in Periodic Table</li>
+				<li>Ionic Radius</li>
+				<li>More on Oxidation State</li>
+				<li>Hydration Energy</li>
+				<li>Halides</li>
+			</ul>
+			</div>
+			<div id="inner-container1">
+			<h1><a href="transitionElements.html">Transition Elements</a></h1>
+			<ul>
+				<li>Introduction to the Transition Elements</li>
+				<li>Oxidation State of Transition Elements</li>
+				<li>Complex Compounds</li>
+				<li>Rusting of Iron</li>
+				<li>Preparation of Potassium Chromate</li>
+				<li>Properties of Potassium Dichromate</li>
+			</ul>	
+			</div>
+			<div id="inner-container1">
+			<h1><a href="environmental.html">Environmental Chemistry</a></h1>
+			<ul>
+				<li>Composition of Atmosphere</li>
+				<li>Ozone Depletion due to Oxides of Nitrogen and Sulphur</li>
+				<li>Nutrient and Thermal Water Pollution</li>
+				<li>Dissolved Oxygen(DO)</li>
+				<li>Purification of Water</li>
+			</ul>		
+		</div>
+		</div>
+			<div id="footer">
+			<ul id="list">
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="aboutUs.html">About SmartLearning</a></li>
+				<li><a href="tutorails.html">Vision and Mission</a></li>
+				<li><a href="teacherInfo.html">Objectives</a></li>
+				<li><a href="studentLogin.html">Equal Opportunity Policy</a></li>
+			</ul>
+		</div>
+		<div id="lfooter">
+		</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("panel");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+</body>	
+</html>
